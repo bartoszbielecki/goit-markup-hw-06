@@ -172,13 +172,13 @@ label .modal-checkbox {
   color: rgba(46, 47, 66, 0.4);
 }
 
-.modal-input .modal-input-icon svg,
-.modal-input .modal-input-icon svg {
+.modal-input .modal-input-icon,
+.modal-input .modal-input-icon {
   fill: var(--color-slate);
 }
 
-.modal-input:hover .modal-input-icon svg,
-.modal-input:focus .modal-input-icon svg {
+.modal-input:hover .modal-input-icon,
+.modal-input:focus .modal-input-icon {
   fill: var(--color-iris);
 }
 
