@@ -61,7 +61,7 @@ img {
 
 /* MODAL */
 
-.modal {
+.backdrop {
   background: var(--color-navyblue-modal, rgba(46, 47, 66, 0.4));
   position: fixed;
   width: 100vw;
@@ -72,7 +72,7 @@ img {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.backdrop {
+.modal {
   position: relative;
   margin: 80px auto 8px;
   width: 408px;
@@ -81,6 +81,7 @@ img {
   background: var(--color-dairy);
   box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.2),
     0px 1px 3px 0px rgba(0, 0, 0, 0.12), 0px 1px 1px 0px rgba(0, 0, 0, 0.14);
+  padding: 72px 24px 24px;
 }
 
 .close-btn {
@@ -115,6 +116,100 @@ img {
 .close-btn:hover .close-icon,
 .close-btn:focus .close-icon {
   fill: var(--color-white);
+  transition: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.modal-form {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  margin-top: 16px;
+  color: var(--color-light-slate);
+  font-size: 12px;
+  gap: 8px;
+}
+
+.modal-header {
+  font-weight: 500;
+}
+
+.modal-form svg {
+  position: absolute;
+  margin-left: 16px;
+  margin-top: 29px;
+}
+
+label {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+label .modal-checkbox {
+  display: flex;
+}
+
+.modal-input {
+  padding: 11px 16px 11px 38px;
+  border: 1px solid rgba(46, 47, 66, 0.4);
+  border-radius: 4px;
+  background-color: transparent;
+  line-height: 16.8px;
+  transition: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.modal-textarea {
+  padding: 11px 16px;
+  border: 1px solid rgba(46, 47, 66, 0.4);
+  border-radius: 4px;
+  background-color: transparent;
+  transition: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+.modal-textarea::placeholder {
+  color: rgba(46, 47, 66, 0.4);
+}
+
+.modal-input .modal-input-icon svg,
+.modal-input .modal-input-icon svg {
+  fill: var(--color-slate);
+}
+
+.modal-input:hover .modal-input-icon svg,
+.modal-input:focus .modal-input-icon svg {
+  fill: var(--color-iris);
+}
+
+.modal-input:hover,
+.modal-input:focus,
+.modal-textarea:hover,
+.modal-textarea:focus {
+  border: 1px solid var(--color-iris);
+  transition: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.modal-form-btn {
+  background-color: var(--color-iris);
+  color: var(--color-white);
+  border: none;
+  border-radius: 4px;
+  width: 169px;
+  font-size: 16px;
+  line-height: 24px;
+  padding: 16px 0;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+  margin: 24px auto;
+  transition: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.modal-form-btn:hover,
+.modal-form-btn:focus {
+  cursor: pointer;
+  background-color: var(--color-ocean);
   transition: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -311,6 +406,59 @@ img {
 .footer-media-item:focus {
   cursor: pointer;
   background-color: var(--color-green);
+  transition: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.footer-subscribe {
+  color: var(--color-white);
+}
+
+.footer-form {
+  margin-top: 16px;
+  display: inline-flex;
+  justify-content: center;
+  gap: 24px;
+}
+
+.email-input {
+  background-color: transparent;
+  border: 1px solid var(--color-white);
+  border-radius: 4px;
+  padding: 8px 16px;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+  color: var(--color-white);
+  font-size: 12px;
+  line-height: 24px;
+}
+
+.email-input::placeholder {
+  color: var(--color-white);
+  letter-spacing: 0.64px;
+}
+
+.subscribe-form-btn {
+  background-color: var(--color-iris);
+  border: none;
+  border-radius: 4px;
+  padding: 8px 24px;
+  color: var(--color-white);
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 24px;
+  transition: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.subscribe-form-btn svg {
+  margin-left: 16px;
+}
+
+.subscribe-form-btn:hover,
+.subscribe-form-btn:focus {
+  cursor: pointer;
+  background-color: var(--color-ocean);
   transition: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }

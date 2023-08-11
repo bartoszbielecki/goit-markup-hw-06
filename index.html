@@ -20,34 +20,6 @@
     <title>Studio</title>
   </head>
   <body>
-    <!--
-      <header class="navbar">
-      <div class="navigation-section container">
-        <nav class="nav-section">
-          <a href="index.html" class="logo"
-            ><span class="logo-span">Web</span>studio</a
-          >
-          <menu class="nav-menu">
-            <li><a href="./index.html" class="link-menu">Studio</a></li>
-            <li><a href="./portfolio.html" class="link-menu">Portfolio</a></li>
-            <li><a href="#" class="link-menu">Contacts</a></li>
-          </menu>
-        </nav>
-        <ul id="contact-list">
-          <li>
-            <a href="mailto:info@devstudio.com" class="link-contact"
-              >info@devstudio.com</a
-            >
-          </li>
-          <li>
-            <a href="tel:+11(000)1111111" class="link-contact"
-              >+11 (000) 111-11-11</a
-            >
-          </li>
-        </ul>
-      </div>
-    </header>
-  -->
     <header class="navbar">
       <div class="navigation-section container">
         <nav class="nav-section">
@@ -92,13 +64,60 @@
             Order Service
           </button>
 
-          <div class="modal is-hidden" data-modal>
-            <div class="backdrop">
+          <div class="backdrop is-hidden" data-modal>
+            <div class="modal">
               <button data-modal-close class="close-btn">
                 <svg width="8px" height="8px" class="close-icon">
                   <use href="./images/icons.svg#icon-close"></use>
                 </svg>
               </button>
+              <div class="modal-content">
+                <p class="modal-header">
+                  Leave your contacts and we will call you back
+                </p>
+                <form name="modal-form" autocomplete="on" class="modal-form">
+                  <label>
+                    Name
+                    <svg width="18px" height="18px" class="modal-input-icon">
+                      <use href="./images/icons.svg#icon-person"></use>
+                    </svg>
+                    <input type="text" name="name" class="modal-input" />
+                  </label>
+                  <label>
+                    Phone
+                    <svg width="18px" height="18px" class="modal-input-icon">
+                      <use href="./images/icons.svg#icon-phone"></use>
+                    </svg>
+                    <input type="tel" name="phone" class="modal-input" />
+                  </label>
+                  <label>
+                    Email
+                    <svg width="18px" height="18px" class="modal-input-icon">
+                      <use href="./images/icons.svg#icon-email"></use>
+                    </svg>
+                    <input type="email" name="email" class="modal-input" />
+                  </label>
+                  <label>
+                    Comment
+                    <textarea
+                      name="feedback"
+                      rows="6"
+                      placeholder="Text input"
+                      class="modal-textarea"
+                    ></textarea>
+                  </label>
+                  <label class="modal-checkbox">
+                    <input
+                      type="checkbox"
+                      name="policy-privacy"
+                      value="accept"
+                    />
+                    I accept the terms and conditions of the
+                    <a href="#">Privacy Policy</a>
+                  </label>
+                  <button class="modal-form-btn" type="submit">Send</button>
+                </form>
+              </div>
             </div>
           </div>
         </div>
@@ -192,71 +211,6 @@
           </ul>
         </div>
       </section>
-      <!--
-              <section class="team-section">
-        <div class="team container">
-          <h2 class="team-heading">Our Team</h2>
-          <ul class="team-members-group">
-            <li class="team-item">
-              <figure>
-                <img
-                  src="images/team-img-1.jpg"
-                  alt="smiling man in shirt with thick beard"
-                  width="264"
-                  height="260"
-                />
-                <figcaption class="team-member">
-                  <h3 class="team-member-name">Mark Guerrero</h3>
-                  <p class="team-member-info">Product Designer</p>
-                </figcaption>
-              </figure>
-            </li>
-            <li class="team-item">
-              <figure>
-                <img
-                  src="images/team-img-2.jpg"
-                  alt="smiling man in shirt with facial hair looking into the distance"
-                  width="264"
-                  height="260"
-                />
-                <figcaption class="team-member">
-                  <h3 class="team-member-name">Tom Ford</h3>
-                  <p class="team-member-info">Frontend Developer</p>
-                </figcaption>
-              </figure>
-            </li>
-            <li class="team-item">
-              <figure>
-                <img
-                  src="images/team-img-3.jpg"
-                  alt="smiling woman in pink sweater with long brown hair"
-                  width="264"
-                  height="260"
-                />
-                <figcaption class="team-member">
-                  <h3 class="team-member-name">Camila Garcia</h3>
-                  <p class="team-member-info">Marketing</p>
-                </figcaption>
-              </figure>
-            </li>
-            <li class="team-item">
-              <figure>
-                <img
-                  src="images/team-img-4.jpg"
-                  alt="smiling man in a shirt with facial hair"
-                  width="264"
-                  height="260"
-                />
-                <figcaption class="team-member">
-                  <h3 class="team-member-name">Daniel Wilson</h3>
-                  <p class="team-member-info">UI Designer</p>
-                </figcaption>
-              </figure>
-            </li>
-          </ul>
-        </div>
-      </section>
-      -->
       <section class="team-section">
         <div class="team container">
           <h2 class="team-heading">Our Team</h2>
@@ -541,6 +495,24 @@
               </svg>
             </li>
           </ul>
+        </div>
+        <div class="footer-subscribe">
+          <p>Subscribe</p>
+          <div class="footer-form">
+            <form name="subscribe-form" autocomplete="on">
+              <input
+                type="email"
+                name="email"
+                placeholder="E-mail"
+                class="email-input"
+              /><button class="subscribe-form-btn" type="submit">
+                Subscribe
+                <svg width="24px" height="24px" class="subscibe-btn-icon">
+                  <use href="./images/icons.svg#icon-subscribe"></use>
+                </svg>
+              </button>
+            </form>
+          </div>
         </div>
       </div>
     </footer>
