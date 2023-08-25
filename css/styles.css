@@ -146,6 +146,10 @@ label {
   gap: 4px;
 }
 
+.modal-check-text {
+  display: block;
+}
+
 .modal-check-text span {
   width: 16px;
   height: 16px;
@@ -179,7 +183,6 @@ label {
 }
 
 .modal-checkbox-span {
-  line-height: 14px;
 }
 
 .modal-checkbox-span a {
