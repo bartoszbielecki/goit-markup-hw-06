@@ -36,6 +36,14 @@ img {
 
 .visually-hidden {
   visibility: hidden;
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  overflow: hidden;
 }
 
 .is-hidden {
@@ -150,6 +158,11 @@ label {
   display: block;
 }
 
+.modal-check-span {
+  margin-top: 10px;
+  margin-bottom: -3px;
+}
+
 .modal-check-text span {
   width: 16px;
   height: 16px;
@@ -160,18 +173,24 @@ label {
   justify-content: center;
   fill: transparent;
   margin-right: 8px;
+  transition: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .checkbox-icon {
   fill: var(--color-white);
   width: 10px;
   height: 8px;
+  transition: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .modal-check:checked + .modal-check-text span {
   background-color: var(--color-ocean);
   fill: var(--color-white);
   border: none;
+  transition: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .modal-checkbox {
@@ -180,9 +199,6 @@ label {
   gap: 8px;
   align-items: center;
   margin-top: 8px;
-}
-
-.modal-checkbox-span {
 }
 
 .modal-checkbox-span a {
