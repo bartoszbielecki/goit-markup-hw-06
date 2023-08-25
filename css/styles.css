@@ -240,11 +240,11 @@ label {
   fill: var(--color-navy-blue);
 }
 
-.modal-input input:focus + svg {
+.modal-input-container input:focus + svg {
   fill: var(--color-iris);
 }
 
-.modal-input input:focus,
+.modal-input-container input:focus,
 .modal-textarea input:focus {
   border: 1px solid var(--color-iris);
   transition: 250ms;
