@@ -179,10 +179,17 @@ label {
 
 .checkbox-icon {
   fill: var(--color-white);
+
   width: 10px;
   height: 8px;
   transition: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.checkbox-icon svg {
+  position: absolute;
+  left: 0;
+  top: 0;
 }
 
 .modal-check:checked + .modal-check-text span {
