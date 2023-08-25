@@ -1,5 +1,5 @@
 :root {
-  --font-logo: 'Raleway', sans-serif;
+  --font-logo: "Raleway", sans-serif;
   --color-black: #000;
   --color-white: #fff;
   --color-dairy: #fcfcfc;
@@ -21,7 +21,7 @@
 }
 
 body {
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   color: var(--color-navy-blue);
   line-height: 1.2;
 }
@@ -146,6 +146,30 @@ label {
   gap: 4px;
 }
 
+.modal-check-text span {
+  width: 16px;
+  height: 16px;
+  border: 1px solid rgba(46, 47, 66, 0.4);
+  border-radius: 2px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  fill: transparent;
+  margin-right: 8px;
+}
+
+.checkbox-icon {
+  fill: var(--color-white);
+  width: 10px;
+  height: 8px;
+}
+
+.modal-check:checked + .modal-check-text span {
+  background-color: var(--color-ocean);
+  fill: var(--color-white);
+  border: none;
+}
+
 .modal-checkbox {
   display: inline-flex;
   flex-direction: row;
@@ -167,23 +191,6 @@ label {
 .modal-checkbox-span a:hover,
 .modal-checkbox-span a:focus {
   color: var(--color-ocean);
-  transition: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-input[type='checkbox'] {
-  width: 16px;
-  height: 16px;
-  stroke-width: 1px;
-  stroke: var(--navyblue-modal, rgba(46, 47, 66, 0.4));
-  transition: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-input[type='checkbox']:checked,
-input[type='checkbox']:hover,
-input[type='checkbox']:focus {
-  background-color: var(--color-ocean);
   transition: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -211,11 +218,11 @@ input[type='checkbox']:focus {
 }
 
 .modal-input-icon {
-  fill: var(--color-slate);
+  fill: var(--color-navy-blue);
 }
 
-input:hover .modal-input-icon,
-input:focus .modal-input-icon {
+.modal-input:hover .modal-input-icon,
+.modal-input:focus .modal-input-icon {
   fill: var(--color-iris);
 }
 
@@ -320,7 +327,7 @@ input:focus .modal-input-icon {
 }
 
 .link-menu::after {
-  content: '';
+  content: "";
   position: absolute;
   bottom: 0;
   display: block;
@@ -344,7 +351,7 @@ input:focus .modal-input-icon {
 }
 
 .active-link-menu::after {
-  content: '';
+  content: "";
   position: absolute;
   bottom: 0;
   display: block;
@@ -412,7 +419,7 @@ input:focus .modal-input-icon {
   text-decoration: none;
   text-transform: uppercase;
   color: var(--color-cloud);
-  font-family: 'Raleway', sans-serif;
+  font-family: "Raleway", sans-serif;
   font-size: 18px;
   display: inline-block;
   margin-bottom: 16px;
@@ -528,7 +535,7 @@ input:focus .modal-input-icon {
   background-color: var(--color-iris);
   color: var(--color-cloud);
   font-weight: 500;
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   font-size: 16px;
   border: none;
   border-radius: 4px;
