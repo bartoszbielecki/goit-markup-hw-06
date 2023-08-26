@@ -500,6 +500,7 @@ label {
   color: var(--color-white);
   font-size: 12px;
   line-height: 24px;
+  width: 264px;
 }
 
 .email-input::placeholder {
