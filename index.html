@@ -79,8 +79,13 @@
                   <div class="modal-input-container">
                     <label>
                       Name
-                      <input type="text" name="name" class="modal-input" />
-                      <svg width="18px" height="18px" class="modal-input-icon">
+                      <input
+                        type="text"
+                        name="name"
+                        class="modal-input"
+                        required
+                      />
+                      <svg width="20px" height="20px" class="modal-input-icon">
                         <use href="./images/icons.svg#icon-person"></use>
                       </svg>
                     </label>
@@ -88,9 +93,17 @@
                   <div class="modal-input-container">
                     <label>
                       Phone
-                      <input type="tel" name="phone" class="modal-input" />
+                      <input
+                        type="tel"
+                        name="phone"
+                        class="modal-input"
+                        pattern="\d*"
+                        minlength="9"
+                        maxlength="12"
+                        required
+                      />
 
-                      <svg width="18px" height="18px" class="modal-input-icon">
+                      <svg width="20px" height="20px" class="modal-input-icon">
                         <use href="./images/icons.svg#icon-phone"></use>
                       </svg>
                     </label>
@@ -98,9 +111,14 @@
                   <div class="modal-input-container">
                     <label>
                       Email
-                      <input type="email" name="email" class="modal-input" />
+                      <input
+                        type="email"
+                        name="email"
+                        class="modal-input"
+                        required
+                      />
 
-                      <svg width="18px" height="18px" class="modal-input-icon">
+                      <svg width="20px" height="20px" class="modal-input-icon">
                         <use href="./images/icons.svg#icon-email"></use>
                       </svg>
                     </label>
@@ -523,6 +541,7 @@
                 name="email"
                 placeholder="E-mail"
                 class="email-input"
+                required
               /><button class="subscribe-form-btn" type="submit">
                 Subscribe
                 <svg width="24px" height="24px" class="subscibe-btn-icon">

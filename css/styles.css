@@ -101,6 +101,8 @@ img {
   background-color: var(--color-cornflower);
   width: 24px;
   height: 24px;
+  justify-content: center;
+  align-items: center;
   transition: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -114,9 +116,6 @@ img {
 }
 
 .close-icon {
-  position: absolute;
-  top: 8px;
-  left: 8px;
   transition: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -246,14 +245,17 @@ label {
   color: rgba(46, 47, 66, 0.4);
 }
 
-.modal-input-container input:focus + svg {
+.modal-input-container input:focus + svg,
+.modal-input-container input:hover + svg {
   fill: var(--color-iris);
   transition: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .modal-input-container input:focus,
-.modal-textarea input:focus {
+.modal-textarea input:focus,
+.modal-input-container input:hover,
+.modal-textarea input:hover {
   border: 1px solid var(--color-iris);
   transition: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
