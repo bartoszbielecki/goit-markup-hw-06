@@ -181,7 +181,6 @@ label {
 
 .checkbox-icon {
   fill: var(--color-white);
-
   width: 10px;
   height: 8px;
   transition: 250ms;
